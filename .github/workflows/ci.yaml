@@ -27,7 +27,7 @@ jobs:
       fail-fast: false
       matrix:
         version: [3.11]
-        os: [ubuntu-22.04]
+        os: [azure-linux-scale]
     runs-on: ${{matrix.os}}
     env:
       PIP_CACHE_DIR: "${{ github.workspace }}/.pip-cache"
