@@ -28,7 +28,7 @@ jobs:
       fail-fast: false
       matrix:
         version: [3.11]
-        os: [linux-mi300-gpu-1]
+        os: [arc-runners]
     runs-on: ${{matrix.os}}
     env:
       PIP_CACHE_DIR: "${{ github.workspace }}/.pip-cache"
